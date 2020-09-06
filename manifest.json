@@ -1,3 +1,17 @@
 {
-    "name":"Smash It"
+    "name":"SmashIt",
+    "short_name":"smash",
+    "start_url":"/index.html",
+    "display":"standalone",
+    "background_color":"#FFF",
+    "theme_color":"indigo",
+    "orientation": "potrait-primary",
+    "icons":[
+
+        {
+            "src":"assets/images/site logo72.png",
+            "type":"image/png",
+            "sizes":"72x72"
+        }
+    ]
 }

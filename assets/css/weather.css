@@ -5,9 +5,133 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    font-size:18px;
+}
+
 
 body{
     background-image: url("/assets/images/weather-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 100px;
+    width:60%;
+}
+
+/* temp section*/
+
+.temp h1{
+    font-size:6rem;
+}
+
+.temp,.condition,.description{
+    margin-left: 5%;
+}
+
+/* location section*/
+
+.location p{
+    font-size:3rem;
+}
+
+.date {
+    font-size:1.4rem;
+}
+
+.condition .location{
+    text-align: center;
+}
+
+/* description section*/
+.description .describe{
+    font-size:3rem;
+}
+
+
+.description .icon{
+    text-align: center;
+}
+
+/* app wrapper*/
+
+.details{
+    position: absolute;
+    right: 0;
+    width:30%;
+    background-color: rgba(0,0,0,0.3);
+    height:100vh;
+
+}
+
+hr{
+   border: solid 0.1px black;
+}
+
+.search{
+    margin-bottom: 30px;
+}
+
+.regions{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 60%;
+    margin-left:7%;
+   
+}
+
+.region{
+    font-size:1.2rem;
+    margin-bottom:20px;
+ 
+}
+
+.weather-head{
+    margin-top:20px;
+    margin-left:6%;  
+}
+
+.more .more-weather{
+    display: flex;
+    
+    margin-bottom:25px;
+   margin-top:40px;
+}
+
+.more .more-weather .measure{
+    width: 30%;
+    margin-left:6%;
+}
+.more .more-weather .value{
+    margin-left:45%;
+}
+.more h2{
+    text-align: left;
+}
+
+/* icons*/
+.icon .cloud{
+    font-size:3rem;
+}
+
+.fa-search{
+    font-size: 3rem;
+    margin-top:20px;
+}
+/*search*/
+
+.search input{
+    border:transparent;
+    background-color:transparent;
+width:60%;
+margin-left:6%;
+margin-right:6%;
+
+height: 50px;
+margin-top:20px;
 }

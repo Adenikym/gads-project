@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/weather.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5673da9ff8.js" crossorigin="anonymous"></script>
     <title>Weather Page</title>
 </head>
 <body>
@@ -12,7 +13,67 @@
 
 
    <main>
+       <div class="wrapper">
+       <div class="display">
+<div class="temp">
+    <h1 id="tempnum">16 C</h1>
+</div>
 
+<div class="condition">
+<div class="location">
+   <p id="name"> New York</p>
+</div>
+<div class="date">
+<p>06:09- <span>Monday, 9 September'20</span>   </p>
+</div>
+</div>
+
+
+<div class="description">
+    <div class="icon">
+        <i  class="fas fa-cloud cloud"></i>
+    </div>
+
+    <div id="nature" class="describe">
+        Cloudy
+    </div>
+</div>
+
+</div>
+
+<div class="details">
+    <div class="search">
+        <input type="search" name="" id="">
+        <i class="fas fa-search "></i>
+    </div>
+    <p id="error"></p>
+    <hr>
+    <div class="regions">
+        <p class="region">Queens</p>
+        <p class="region">Manhattan</p>
+        <p class="region">Brooklyn</p>
+    </div>
+    <hr>
+    <h2 class="weather-head">Weather Details    </h2>
+    <div class="more">
+      
+        <div class="more-weather">
+            <p class="measure">Humidity</p>
+            <p id='humid' class="value">50%</p>
+        </div>
+        <div class="more-weather">
+            <p class="measure">Pressure</p>
+            <p id="pres" class="value">70%</p>
+        </div>
+        <div class="more-weather">
+            <p class="measure">Wind Speed</p>
+            <p id="wind" class="value">40%</p>
+        </div>
+    </div>
+
+
+</div>
+</div>
 
    </main>
 

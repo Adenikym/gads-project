@@ -9,10 +9,14 @@
     display:none;
 }
 
+header{
+    margin-bottom: 20px;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
-    margin-top:30px;
+   
 }
 
 .navbar{
@@ -24,15 +28,28 @@ nav{
 
 .navbar li{
     margin-left: 3%;
-    font-size:1.2rem;
+    font-size:1.5rem;
+    margin-top:30px;
 }
 
 .logo{
     font-size:1.5rem;
+    margin-top:10px;
+   
 }
 
 .btn-sign{
 padding: 5px 10px;
+margin-top:30px;
+background-color: #8a2be2;
+border:none;
+color:white;
+font-size:1.2rem;
+border-radius:7px;
+}
+
+a{
+    text-decoration: none;
 }
 .hamburger{
     width: 35px;
@@ -110,6 +127,11 @@ width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-right: 4%;
+}
+
+.btn-sign{
+    width:10%;
+    height:40px;
 }
 
 

@@ -2,5 +2,168 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
+/*dark purple:#320032;
+mid-purple:#8a2be2;
+light-purple:#8a2be2;
+
+/* begin-div*/
+
+.made{
+    background-image: url("/assets/images/pouring.jpg");
+    background-size: cover;
+    width:80%;
+    margin-right: 10%;
+    margin-left:10%;
+}
+
+.made h1{
+    margin-top: 30px;
+    margin-bottom:10px;
+    width:30%;
+    margin-left:50%;
+    font-size:4rem;
+    text-align:left; 
+    color:white;
+}
+
+.made p{
+    width:30%;
+    margin-left:50%;
+    text-align:left;
+    font-size:1.2rem; 
+    color:white;
+}
+
+.current-events{
+    background-color: #320032;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    width:60%;
+    margin-right: 20%;
+    margin-left:20%;
+    height: 100px;
+    border-radius:7px;
+    position: absolute;
+    top:550px;
+}
+
+.current-events .sec{
+    width:25%;
+}
+
+.current-events .sec hr{
+    border: 0.1px solid white;
+
+}
+
+.current-events .sec p{
+    font-size:0.8rem;
+}
+
+.current-events .sec h2{
+    font-size:1.3rem;
+    height:50px;
+    margin-top:8px;
+    font-weight: lighter;
+    margin-bottom:0 !important;
+}
+
+/* event-div*/
+
+.events{
+    margin-top:150px;
+    width:60%;
+    margin-right: 20%;
+    margin-left:20%;
+}
+
+.events h2{
+    font-size:2.8rem;
+    text-align:left;
+
+}
+.event-list{
+    display:flex;
+    justify-content:space-around;
+}
+
+.btn1{
+    background-image:url("/assets/images/people-sitting.jpg");
+    display:flex;
+    height:200px;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.btn2{
+    background-image:url("/assets/images/main.jpg");
+    display:flex;
+    height:200px;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.btn3{
+    background-image:url("/assets/images/festive.jpg");
+    display:flex;
+    height:200px;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.box{
+    margin-top:20px ;
+    border-radius:7px;
+    border:1px solid white;
+    width:30%;
+    box-shadow: 2px 1rem 1rem #320032;
+}
+
+.box button{
+    height:35px;
+    width:15%;
+    background-color: white;
+    margin-top:10px;
+    border-radius:5px;
+    border:none;
+}
+
+.box .add-event{
+    margin-right:4%;
+}
+
+.box .like{
+    margin-right:6%;
+}
+
+.box .btn2 .price{
+    width:20%;
+    margin-right:50%;
+    margin-left: 4%;
+
+}
+
+.box .btn1 .price{
+    width:20%;
+    margin-right:50%;
+    margin-left: 4%;
+
+}
+
+.box .btn3 .price{
+    width:20%;
+    margin-right:50%;
+    margin-left: 4%;
+
+}
+
+
+
+
+
+
 

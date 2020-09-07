@@ -51,6 +51,16 @@ border-radius:7px;
 a{
     text-decoration: none;
 }
+
+a:hover,.active{
+    border-bottom: 2px solid #8a2be2;
+    padding-bottom: 8px;
+}
+
+button:hover,.btn-sign:hover{
+    box-shadow: 0 0 10px 0px #320032;
+   
+  }
 .hamburger{
     width: 35px;
   height: 16px;
@@ -132,6 +142,7 @@ width: 100%;
 .btn-sign{
     width:10%;
     height:40px;
+    outline:none !important;
 }
 
 

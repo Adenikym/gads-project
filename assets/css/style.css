@@ -48,7 +48,7 @@ light-purple:#8a2be2;
     height: 100px;
     border-radius:7px;
     position: absolute;
-    top:550px;
+    top:630px;
 }
 
 .current-events .sec{
@@ -161,9 +161,23 @@ light-purple:#8a2be2;
 
 }
 
+.event-details{
+    display:flex;
+    justify-content: space-around;
+    margin-top:5px;
+}
+
+.other-details{width:75%;}
+
 /*weather-bar*/
 
-
+.bar{
+    width:12%;
+    height:15px;
+    background-color: greenyellow;
+    margin-top:5px;
+    box-shadow: 0.1rem 0.1rem 0.1rem green;
+}
 
 
 

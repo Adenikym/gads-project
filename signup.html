@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Sign up to SmashIt</title>
+</head>
+<body>
+    <main>
+        <div class="sign-fun">
+            <div class="unlimited-fun">
+<h1 class="smash"> <span>Smash</span>It</h1>
+<p>Sign Up to access unlimited fun outdoors.</p>
+            </div>
+
+            <div class="smash-form">
+<p class="already">Already a member?
+    <span id="open-modal">Sign-in</span>
+</p>
+
+<form action="" class="sign-up">
+<div class="customer-name">
+    <div class="full">
+        <label for="">Full Name</label>
+        <br>
+        <input type="text">
+    </div>
+
+    <div class="user">
+        <label for="">Username</label>
+        <input type="text">
+    </div>
+</div>
+
+<label for="mail">Email Address</label>
+<br>
+<input type="email" name="mail" id="">
+<br>
+<label for="numer">Phone Number</label>
+<br>
+<input type="tel" name="number" id="">
+<br>
+<label for="pass">Password</label>
+<br>
+<input type="password" name="pass" id="">
+<br>
+<label for="pass2">Confirm Password</label>
+<br>
+<input type="password" name="pass2" id="pass-c">
+<br>
+<input type="submit" id="sub" value="Create Account">
+
+</form>
+
+        </div>
+
+       
+        </div>
+        <div id="log-modal" class="login-modal">
+            <div class="login-form">
+                <form action="" class="new-modal">
+                <label for="user-modal">Username</label>
+                <br>
+                
+            <input type="text" name="user-modal" id="">
+            <br>
+            
+            <label for="log-pass">Password</label>
+            <br>
+            
+            <input type="password" name="log-pass" id="">
+<br>
+            <button  id='sub-modal'>Sign-in </button>
+        </form>
+            </div>
+                    </div>
+    </main>
+    <script >
+         let login=document.getElementById("log-modal");
+let open=document.getElementById("open-modal");
+let back=document.getElementById("sub-modal");
+
+open.addEventListener("click",function () {
+   
+  login.style.display='flex';
+})
+
+back.addEventListener("click",function () {
+    e=>{e.preventDefault();
+    }
+  login.style.display='none';
+})
+    </script>
+</body>
+</html>

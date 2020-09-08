@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color:#320032 ;
+}
+
+
+
+.sign-fun{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:flex;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    height:700px;
+    box-shadow: 1rem 1rem 1rem #653857;
+    border: 1px solid #653857;
+    color:#653857;
+    font-weight: bold;
+  
+}
+
+.smash-form label{
+    margin-bottom: 10px;
+    height: 500px;
+}
+
+#pass-c{
+    margin-bottom: 20px;
+}
+
+ input{
+    margin-bottom: 5px;}
+
+#sub{
+    background-color: #8a2be2;
+    outline:none;
+    border:none;
+    border-radius:10px;
+    color:white;
+    font-size:1.5rem;
+   
+}
+
+#sub:hover{
+    box-shadow: 0 0 10px 0px #320032;
+}
+
+.unlimited-fun{
+    background-image: url("/assets/images/festive.jpg");
+    width:40%;
+    background-size: cover;
+    color: white;
+    border-radius:10px;
+}
+
+.unlimited-fun h1{
+    font-size:3rem;
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 300px;
+    margin-bottom:20px;
+}
+
+.unlimited-fun p{
+    font-size:2.2rem;
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+
+
+
+
+
+
+.smash-form{
+    width: 60%;
+    background-color: white;
+}
+
+.already{
+   width: 60%;
+   margin-left:70%;
+    margin-top :10px;
+    margin-bottom:10px;
+    
+}
+
+.already span{
+    color:blue;
+}
+
+
+
+.sign-up{
+    margin-top: 80px;
+    display: block;
+  width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.sign-up input{
+    width :50%;
+    height:50px;
+} 
+
+.sign-up .customer-name input{
+    width :90%;
+}
+
+.customer-name{
+    display:flex;
+   
+}
+
+/*login modal*/
+
+.login-modal{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.9);
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.login-form{
+    background-color:white;
+    height:250px;
+    width:20%;
+    border-radius:20px;
+    box-shadow:2px 2px 1rem grey;
+   
+  
+}
+
+.login-form label{
+    
+    font-size:1.3rem;
+    width:50%;
+    color:#320032;
+}
+
+.login-form input{
+    width:60%;
+    height:30px;
+    margin-bottom:20px ;
+    border-radius:7px;
+    border:1px solid #8a2be2;
+   
+}
+
+.new-modal{
+    margin-top:30px;
+    width:100%;
+    margin-left:18%;
+   
+
+}
+
+#sub-modal{
+    background-color:#8a2be2;
+    border:none;
+    outline:none;
+    color:white;
+    font-size:1.2rem;
+    width:30%;
+    border-radius: 7px;
+    padding: 5px 10px;
+
+}
+
+#sub-modal:hover{
+    box-shadow:2px 2px 1rem #320032 ;
+}
+
+#open-modal{
+    cursor: pointer;
+}

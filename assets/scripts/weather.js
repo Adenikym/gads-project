@@ -12,7 +12,7 @@ const api={
   let old=  fetch(`${api.base}weather?q=${api.city}&units=metric&APPID=${api.key}`)
     .then(weather => {
         return weather.json();
-    }).then(displayWeather)
+    }).then(displayWeather).then(barColor)
 
     console.log(old)
 
@@ -52,6 +52,8 @@ else {
 
 }
 
+function barColor(){
+
 
 
 document.querySelectorAll(".bar").forEach(bar=>
@@ -66,4 +68,5 @@ document.querySelectorAll(".bar").forEach(bar=>
             }
         }
     })
+}
 

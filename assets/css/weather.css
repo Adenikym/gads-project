@@ -13,7 +13,7 @@ html{
 body{
     background-image: url("/assets/images/weather-bg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;
 }
 
 .display{
@@ -26,12 +26,16 @@ body{
 
 /* temp section*/
 
-.temp h1{
-    font-size:6rem;
+#tempnum{
+    font-size:3rem;
 }
 
 .temp,.condition,.description{
     margin-left: 5%;
+}
+
+.temp{
+    width:20%;
 }
 
 /* location section*/
@@ -134,4 +138,161 @@ margin-right:6%;
 
 height: 50px;
 margin-top:20px;
+}
+
+.mobile-details{
+    display:none;
+}
+
+.mobile-search{
+    display:none;
+}
+
+@media only screen and (max-width:1125px){
+    .temp h1{
+        font-size:3.5rem;
+
+    }
+
+    .icon .cloud{
+        font-size:2rem;
+    }
+    
+    .fa-search{
+        font-size: 2.5rem;
+       
+    }
+
+    .location p{
+        font-size:2rem;
+        margin-top:20px;
+    }
+
+    .date{
+        font-size:0.9rem;
+        color:white;
+        text-align:center;
+       
+    }
+
+    .details{
+        width:40%;
+    }
+
+    .weather-head{
+        font-size:1.1rem;
+    }
+
+    .more .more-weather .measure{
+       font-size:0.9rem;
+    }
+
+    .region{
+        font-size:1rem;
+       
+     
+    }
+
+    .description .describe{
+        font-size:2rem;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    .details{
+        display:none;
+    }
+
+    .display{
+        display:block;
+        position:static;
+        
+    }
+
+    .description .icon{
+        text-align: left;
+        margin-left: 0 !important;
+       
+    }
+    .description .describe{
+        margin-left: 6%;
+    }
+
+
+    .location p{
+        text-align:left;
+    }
+
+    .mobile-details{
+        display:block;
+    }
+
+    .mobile-search{
+        display:block;
+        margin-bottom: 10px;
+        margin-left:5%;
+    }
+
+    .mobile-search input{
+        margin-left: 2%;
+        border-bottom:1px solid black;
+        border-top: none;
+        border-left:none;
+        border-right:none;
+        background-color: transparent;
+        outline: none;
+        padding-bottom: 10px;
+    }
+
+    .condition{
+        margin-bottom:100px;
+        margin-left:10%;
+    }
+
+    .description{
+        display: flex;
+       
+        margin-top:24px;
+        margin-bottom:50px;
+        margin-left:10%;
+    }
+
+
+    .temp{ margin-left:10%;
+    width: 40%;
+}
+
+    .date{
+        text-align: left;
+    }
+
+    .mobile-wdetails{
+        display: flex;
+        justify-content: space-around;
+        width:70%;
+        margin-left: 15%;
+    }
+
+    .mobile-details hr{
+        margin-bottom: 30px;
+    }
+
+
+    .mobile-value{margin-top: 20px;}
+    .mobile-nature{
+        margin-top: 20px;
+    }
+
+    .display .mobile-search .fa-search{
+        font-size:1.3rem;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .mobile-wdetails{
+       
+        width:80%;
+        margin-left: 10%;
+    }
 }

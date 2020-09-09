@@ -17,7 +17,7 @@ const api={
     console.log(old)
 
 function displayWeather (weather) {
-    document.getElementById("tempnum").innerHTML=`${Math.round(weather.main.temp)}`;
+    document.getElementById("tempnum").innerHTML=`${Math.round(weather.main.temp)} <span>°C</span> `;
     document.getElementById("name").innerHTML=`${weather.name}`;
     document.getElementById("nature").innerHTML=weather.weather[0].main;
     document.getElementById("humid").innerHTML=weather.main.humidity;
@@ -58,11 +58,11 @@ document.querySelectorAll(".bar").forEach(bar=>
     {
         weather => {
             if(weather.main.temp<=30) {
-                bar.style.color="green"
+                bar.style.backgroundColor="yellow"
             }
 
             else {
-                bar.style.color="red"
+                bar.style.backgroundColor="red"
             }
         }
     })

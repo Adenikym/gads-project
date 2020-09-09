@@ -179,6 +179,17 @@ light-purple:#8a2be2;
     box-shadow: 0.1rem 0.1rem 0.1rem green;
 }
 
+.load .loader{
+    margin-top:20px;
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    padding:5px 10px;
+    background-color:#8a2be2 ;
+    color:white;
+}
+
+
 /* media queries*/
 
 @media only screen and (max-width:1125px ){

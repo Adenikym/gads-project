@@ -76,9 +76,9 @@ light-purple:#8a2be2;
 
 .events{
     margin-top:150px;
-    width:60%;
-    margin-right: 20%;
-    margin-left:20%;
+    width:70%;
+    margin-right: 15%;
+    margin-left:15%;
 }
 
 .events h2{
@@ -177,6 +177,56 @@ light-purple:#8a2be2;
     background-color: greenyellow;
     margin-top:5px;
     box-shadow: 0.1rem 0.1rem 0.1rem green;
+}
+
+/* media queries*/
+
+@media only screen and (max-width:1125px ){
+
+
+
+
+
+.events{
+   width:80%;
+}
+
+.made h1{
+width:40%;
+}
+
+.made p{
+    width:40%;
+}
+
+.current-events{
+    top:670px;
+    
+}
+
+
+
+   
+}
+
+@media only screen and (max-width:920px){
+    .events{
+        width:85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+     }
+
+     .made h1{
+         width:50%;
+         margin-right:25%;
+         margin-left:25%;
+     }
+     .made p{
+        width:50%;
+        margin-right:25%;
+        margin-left:25%;
+    }
+    
 }
 
 

@@ -148,6 +148,10 @@ margin-top:20px;
     display:none;
 }
 
+.previous-search{
+    display:flex;
+}
+
 @media only screen and (max-width:1125px){
     .temp h1{
         font-size:3.5rem;
@@ -205,11 +209,10 @@ margin-top:20px;
     }
 
     .display{
-        display:block;
-        position:static;
-        
+        display: none;
     }
 
+    
     .description .icon{
         text-align: left;
         margin-left: 0 !important;

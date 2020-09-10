@@ -17,10 +17,7 @@
    <main>
        <div class="wrapper">
        <div class="display">
-<div class="mobile-search">
-    <i class="fas fa-search "></i>
-    <input type="search" name="" id="mobile-icon">
-</div>
+
         <div class="condition">
             <div class="location">
                <p id="name"> New York</p>
@@ -48,39 +45,32 @@
 
 </div>
 
-<div class="mobile-details">
-<hr>
 
-<div class="mobile-wdetails">
-    <div class="mobile-h">
-        <p class="mobile-nature">Humidity</p>
-        <div class="mobile-value">13 <span>km/hr</span></div>
-    </div>
-    <div class="mobile-p">
-        <p class="mobile-nature">Pressure</p>
-        <div class="mobile-value">70 <span>%</span></div>
-    </div>
-    <div class="mobile-w">
-        <p class="mobile-nature">Wind</p>
-        <div class="mobile-value">70 <span>%</span></div>
-    </div>
-</div>
-</div>
 
 <div class="details">
     <div class="search">
-        <input type="search" name="" id="">
+        <input placeholder="search desired city" type="search" name="" id="searchbar">
         <i class="fas fa-search "></i>
     </div>
     <p id="error"></p>
     <hr>
+
     <div class="regions">
-        <p class="region">Queens</p>
-        <p class="region">Manhattan</p>
-        <p class="region">Brooklyn</p>
+        <h2>Search Results:</h2>
+        <div  id="searchcity" class="search-city"></div>
+  <br>
+       <div id="searchtemp" class="search-temp"></div>
+<br>
+       
+
+        <div id="searchcondition" class="search-condition"></div>
+
+
     </div>
     <hr>
-    <h2 class="weather-head">Weather Details    </h2>
+
+    
+    <h2 class="weather-head">Weather Details (New York)   </h2>
     <div class="more">
       
         <div class="more-weather">
@@ -97,8 +87,43 @@
         </div>
     </div>
 
+    <div class="previous-search">
+       
+    </div>
 
 </div>
+<div class="mobile-details">
+
+    <div class="mobile-search">
+        <i class="fas fa-search "></i>
+        <input type="search" name="" id="mobile-icon">
+    </div>
+
+    <div class="mobile-markup">
+        <div class="mobilecity"></div> 
+        <div class="mobile-date"></div>
+        <div class="mobile-temp"></div>
+        <div class="mobile-condition"></div> 
+    </div>
+
+    <hr>
+    
+    <div class="mobile-wdetails">
+        <div class="mobile-h">
+            <p class="mobile-nature">Humidity</p>
+            <div class="mobile-value">13 <span>km/hr</span></div>
+        </div>
+        <div class="mobile-p">
+            <p class="mobile-nature">Pressure</p>
+            <div class="mobile-value">70 <span>%</span></div>
+        </div>
+        <div class="mobile-w">
+            <p class="mobile-nature">Wind</p>
+            <div class="mobile-value">70 <span>%</span></div>
+        </div>
+    </div>
+    </div>
+
 </div>
 
 
@@ -109,5 +134,7 @@
    <footer></footer>
    <script src="assets/scripts/weather.js"></script>
    <script src="assets/scripts/app.js"></script>
+
+  
 </body>
 </html>

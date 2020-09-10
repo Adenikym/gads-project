@@ -27,22 +27,16 @@ window.onclick = function (event) {
   let old=  fetch(`${api.base}weather?q=${api.city}&units=metric&APPID=${api.key}`)
     .then(weather => {
         return weather.json();
-    }).then(barColor)
-
-    function barColor(){
-
-
-
-      document.querySelectorAll(".bar").forEach(bar=>
+        
+    }).then(jsonValue => {
+        document.querySelectorAll(".bar").forEach(bar=>
           {
-              weather => {
-                  if(weather.main.temp<=30) {
-                      bar.style.backgroundColor="yellow"
-                  }
-      
-                  else {
-                      bar.style.backgroundColor="red"
-                  }
-              }
+            if(jsonValue.main.temp<=30) {
+                bar.style.background="green"
+            }
+
+            else {
+                bar.style.background="red"
+            }
           })
-      }
+    })

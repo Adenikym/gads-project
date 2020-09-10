@@ -12,7 +12,7 @@ const api={
   let old=  fetch(`${api.base}weather?q=${api.city}&units=metric&APPID=${api.key}`)
     .then(weather => {
         return weather.json();
-    }).then(displayWeather).then(barColor)
+    }).then(displayWeather)
 
     console.log(old)
 
@@ -26,6 +26,9 @@ function displayWeather (weather) {
 
 
 }
+
+
+    
 
 function saveSearches (weather) {
 var temp= weather.main.temp;
@@ -52,21 +55,6 @@ else {
 
 }
 
-function barColor(){
 
 
-
-document.querySelectorAll(".bar").forEach(bar=>
-    {
-        weather => {
-            if(weather.main.temp<=30) {
-                bar.style.backgroundColor="yellow"
-            }
-
-            else {
-                bar.style.backgroundColor="red"
-            }
-        }
-    })
-}
 

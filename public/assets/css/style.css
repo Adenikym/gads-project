@@ -92,7 +92,7 @@ light-purple:#8a2be2;
 }
 
 .btn1{
-    background-image:url("/assets/images/people-sitting.jpg");
+    background-image:url("assets/images/people-sitting.jpg");
     display:flex;
     height:200px;
     background-size: cover;
@@ -100,7 +100,7 @@ light-purple:#8a2be2;
 }
 
 .btn2{
-    background-image:url("/assets/images/main.jpg");
+    background-image:url("assets/images/main.jpg");
     display:flex;
     height:200px;
     background-size: cover;
@@ -108,7 +108,7 @@ light-purple:#8a2be2;
 }
 
 .btn3{
-    background-image:url("/assets/images/festive.jpg");
+    background-image:url("/public/assets/images/festive.jpg");
     display:flex;
     height:200px;
     background-size: cover;

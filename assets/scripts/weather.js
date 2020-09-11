@@ -1,4 +1,17 @@
 
+function newFunc () {
+    if (localStorage.getItem("saved")) {
+        let savedArray = JSON.parse(localStorage.getItem("saved"))
+        let saved = savedArray[savedArray.length - 1]
+        document.getElementById('searchtemp').innerHTML= `${Math.round(saved.temperature)} <span>°C</span> `;
+        document.getElementById('searchcity').innerHTML=saved.cityName;
+        document.getElementById("searchcondition").innerHTML=saved.nature;
+ }
+ };
+
+ newFunc();
+
+
 const api={
     key:"45268055b3a5a6c511f5432f7d710757",
     base:"https://api.openweathermap.org/data/2.5/",

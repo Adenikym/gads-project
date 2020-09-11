@@ -1,4 +1,18 @@
 
+function mobFunc () {
+    if (localStorage.getItem("saved")) {
+        let savedArray = JSON.parse(localStorage.getItem("saved"))
+        let saved = savedArray[savedArray.length - 1]
+        document.getElementById('mobtemp').innerHTML= `${Math.round(saved.temperature)} <span>°C</span> `;
+        document.getElementById('mobcity').innerHTML=saved.cityName;
+        document.getElementById("mobcon").innerHTML=saved.nature;
+       
+ }
+ };
+
+ mobFunc();
+
+
 const mobile={
     key:"c8e9f7c4c05b5ce22da8f644f8f4bb08",
     base:"https://api.openweathermap.org/data/2.5/"

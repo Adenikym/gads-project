@@ -1,24 +1,32 @@
-const searchbar= document.getElementById("searchbar");
-searchbar.addEventListener("keypress",setQuery);
 
-function setQuery(evt) {
+const mobile={
+    key:"45268055b3a5a6c511f5432f7d710757",
+    base:"https://api.openweathermap.org/data/2.5/"
+}
+
+const searchbox= document.getElementById("mobile-icon");
+searchbox.addEventListener("keypress",mobileQuery);
+
+function mobileQuery(evt) {
     if(evt.keyCode == 13) {
-        getResults(searchbar.value);
-        console.log(searchbar.value);
+        mobileResults(searchbox.value);
+        console.log(searchbox.value);
     }
 }
 
-function getResults (query) {
-    fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+function mobileResults (query) {
+    fetch(`${mobile.base}weather?q=${query}&units=metric&APPID=${mobile.key}`)
     .then(weather => {
         return weather.json();
-    }).then(displaySearch)
-    function displaySearch (weather) {
+       
+    }).then(mobileSearch);
+   
+    function mobileSearch (weather) {
        
        
-            document.getElementById('searchtemp').innerHTML= `${Math.round(weather.main.temp)} <span>°C</span> `;
-           document.getElementById('searchcity').innerHTML=weather.name;
-           document.getElementById("searchcondition").innerHTML=weather.weather[0].main;
+            document.getElementById('mobtemp').innerHTML= `${Math.round(weather.main.temp)} <span>°C</span> `;
+           document.getElementById('mobcity').innerHTML=weather.name;
+           document.getElementById("mobcon").innerHTML=weather.weather[0].main;
        
         var temp=weather.main.temp;
         

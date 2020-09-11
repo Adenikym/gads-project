@@ -44,7 +44,8 @@ body{
     border:none;
     border-radius:10px;
     color:white;
-    font-size:1.5rem;
+    font-size:1.2rem;
+    padding: 5px 10px;
    
 }
 
@@ -89,7 +90,7 @@ body{
 
 .already{
    width: 60%;
-   margin-left:70%;
+   margin-left:50%;
     margin-top :10px;
     margin-bottom:10px;
     
@@ -189,4 +190,76 @@ body{
 
 #open-modal{
     cursor: pointer;
+}
+
+@media only screen and (max-width:920px) {
+    .sign-fun{
+       
+        
+       
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+        height:700px;
+       
+    }
+}
+
+@media only screen and (max-width:1125px) {
+    .login-form{ 
+        width:30%;
+    }
+}
+
+@media only screen and (max-width:920px){
+    .login-form{
+        width:35%;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .login-form{ 
+        width:45%;
+    }
+    
+    
+    .sign-up input{
+        width :45%;
+        height:30px;
+    } 
+
+    #sub{
+        font-size:1rem;
+    }
+
+    .already{
+        margin-left: 35%;
+        width:70%;
+    }
+
+    .customer-name{
+        display:block;
+       
+    }
+
+    .unlimited-fun h1{
+        font-size:2.5rem;
+        width: 80%;}
+}
+
+@media only screen and (max-width:576px){
+    .unlimited-fun{
+        display: none;
+    }
+
+    .smash-form{
+        width: 100%;
+        
+        
+    }
+
+    .login-form{
+        width:80%;
+    }
 }

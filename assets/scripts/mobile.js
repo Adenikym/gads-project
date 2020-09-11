@@ -26,7 +26,10 @@ function mobileResults (query) {
        
             document.getElementById('mobtemp').innerHTML= `${Math.round(weather.main.temp)} <span>°C</span> `;
            document.getElementById('mobcity').innerHTML=weather.name;
-           document.getElementById("mobcon").innerHTML=weather.weather[0].main;
+           document.getElementById("mobcon").innerHTML= weather.weather[0].main 
+           document.getElementById("m-humid").innerHTML= `${weather.main.humidity} <span>%</span>`;
+           document.getElementById("m-pressure").innerHTML=`${weather.main.pressure} `;
+           document.getElementById("m-wind").innerHTML=`${weather.wind.speed} <span>km/hr</span>`
        
         var temp=weather.main.temp;
         

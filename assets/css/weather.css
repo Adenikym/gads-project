@@ -130,12 +130,15 @@ hr{
 /*search*/
 
 .search input{
-    border:transparent;
+    border-bottom:1px solid black;
+        border-top: none;
+        border-left:none;
+        border-right:none;
     background-color:transparent;
 width:60%;
 margin-left:6%;
 margin-right:6%;
-
+outline: none;
 height: 50px;
 margin-top:20px;
 }
@@ -285,8 +288,8 @@ margin-top:20px;
     .mobile-wdetails{
         display: flex;
         justify-content: space-around;
-        width:70%;
-        margin-left: 15%;
+        width:80%;
+       
     }
 
     .mobile-details hr{
@@ -294,7 +297,7 @@ margin-top:20px;
     }
 
 
-    .mobile-value{margin-top: 20px;}
+    .mobile-value{margin-top: 35px;}
     .mobile-nature{
         margin-top: 20px;
     }

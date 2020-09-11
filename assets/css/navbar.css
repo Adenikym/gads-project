@@ -116,6 +116,11 @@ width:100vw;
    
 }
 
+.mobile-nav .logo{
+    width:72px;
+    margin-left: 10%;
+}
+
 .mobile{
     justify-content: flex-end;
 }

@@ -1,6 +1,6 @@
-const staticName="site-static-v2";
+const staticName="site-static-v4";
 
-const dynamicCache = "site-dynamic-v2"
+const dynamicCache = "site-dynamic-v3"
 const assets = [
     "./",
     "/index.html",

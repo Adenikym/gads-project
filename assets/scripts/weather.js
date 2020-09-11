@@ -28,7 +28,9 @@ function displayWeather (weather) {
 }
 
 const searchbar= document.getElementById("searchbar");
+const searchSign= document.getElementById("search-icon");
 searchbar.addEventListener("keypress",setQuery);
+
 
 function setQuery(evt) {
     if(evt.keyCode == 13) {
